@@ -1,0 +1,119 @@
+:root {
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    max-width: 100%;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+    
+  }
+  
+  .sedans{
+    background-color: var(--color-bright-orange);
+    padding: 50px 0 30px 50px;
+    color: white;
+    border-radius: 6px 0 0px 6px;
+  }
+  
+  .suvs{
+    background-color: var(--color-dark-cyan);
+    padding: 50px 0 30px 50px;
+    color: white;
+  }
+  
+  .luxury{
+    background-color: var(--color-very-dark-cyan);
+    padding: 50px 0 30px 50px;
+    color: white;
+    border-radius: 0 6px 6px 0;
+  }
+  
+  .img_3{
+    background:url("images/icon-luxury.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 40px;
+  }
+  
+  .img_2{
+    background:url("images/icon-suvs.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 40px;
+    
+  }
+  
+  .img_1{
+    background:url("images/icon-sedans.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 40px;
+  }
+  
+  .texto-principal{
+    font-size: 50px;
+    font-family: "Big Shoulders Display";
+  }
+  
+  .texto{
+    font-size: 16px;
+    font-family:"Lexend Deca" ;
+    line-height: 1.4;
+  }
+  
+  .btn{
+    margin-top: 30px;
+    padding:  15px;
+    border-radius: 30px;
+    border: none;
+    color: var(--color-bright-orange);
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .one{
+    color: var(--color-dark-cyan);
+  }
+  
+  .two{
+    color: var(--color-very-dark-cyan);
+  }
+  
+  @media(max-width:900px) {
+    .container{
+      height: 100%;
+      margin: 20px 0;
+    }
+  
+    .sedans,
+    .luxury{
+      border-radius: 0;
+    }
+  }
+  
+  @media(max-width:600px) {
+    .sedans{
+      border-radius: 6px 6px 0 0;
+    }
+  
+    .luxury{
+      border-radius: 0 0 6px 6px;
+    }
+  }
